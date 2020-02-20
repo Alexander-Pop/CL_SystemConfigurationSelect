@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+/* Glory to Ukraine! Glory to the heros! */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="codelegacy_general" translate="label" sortOrder="0">
+			<label>Codelegacy</label>
+		</tab>
+		<section 
+			id="codelegacy_general_section" 
+			translate="label" 
+			type="text" 
+			sortOrder="0" 
+			showInDefault="1" 
+			showInWebsite="1" 
+			showInStore="1">
+			<label>Your Multiple fields</label>
+			<tab>codelegacy_general</tab>
+			<resource>Codelegacy_Test::codelegacy_test_config</resource>
+			<group 
+				id="general" 
+				translate="label" 
+				sortOrder="0" 
+				showInDefault="1" 
+				showInWebsite="1" 
+				showInStore="1">
+				<label>General</label>
+				<field 
+					id="active" 
+					translate="label" 
+					sortOrder="0" 
+					showInDefault="1" 
+					showInWebsite="1" 
+					showInStore="1">
+					<label>Your Fields</label>
+					<frontend_model>Codelegacy\SysConfigTable\Block\System\Config\Form\Field\Fields</frontend_model>
+					<backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
